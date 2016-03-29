@@ -1,0 +1,88 @@
+html { 
+  background: url(images/indexwp.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1.shine
+{
+    font-size: 3em;
+    margin: 0 auto;
+    width: 700px;
+}
+
+h3.shine
+{
+    font-size: 2em;
+    margin: 0 auto;
+    width: 700px;
+}
+
+h1.shine:hover, h3.shine:hover, h3.shine:active,
+h1.shine:active {
+	background-color: #15223A ;
+	color:#15223A;
+	transition: background-color 0.3s ease-in,
+			color 0.3s ease-in;
+}
+
+.shine
+{
+    background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+    -webkit-background-size: 125px;
+    
+    color: rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+    
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+button.outofform{
+	display: inline-block;
+	width: 150px;
+	padding: 8px;
+	color: #fff;
+	border: 1px solid #59D9E2;
+	background-color: Transparent;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	transition: background-color 0.2s ease-out, 
+			color 0.2s ease-out;
+}
+
+button.outofform:hover,
+button.outofform:active {
+	background-color: #15223A ;
+	color:#E9FBFD;
+	transition: background-color 0.3s ease-in,
+			color 0.3s ease-in;
+}
+
+@-webkit-keyframes shine
+{
+    0%
+    {
+        background-position: top left;
+    }
+    100%
+    {
+        background-position: top right;
+    }
+}
+#main{
+    width: 350px;
+    height: 850px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}

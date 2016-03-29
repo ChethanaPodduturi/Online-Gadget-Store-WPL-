@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="review.js"></script>
+</head>
+<body>
+	<form action="review.php" method="post">
+		<select name="Type">
+			<option value="Laptop">Laptop</option>
+			<option value="Mobile">Mobile</option>
+			<option value="Tablet">Tablet</option>
+			<option value="Camera">Camera</option>
+			<option value="Hard disk">Storage Device</option>
+		</select><br />
+		<label> Add a Review:</label><br />
+		<TEXTAREA NAME="Review" id="review" ROWS="5" COLS="72"></TEXTAREA><br />
+		<button class="outofform" name="submit" id="submit">Submit</button>
+		<input type="button" name="submit" id="submit" value="Submit" />	
+	</form>
+</body>
+</html>
